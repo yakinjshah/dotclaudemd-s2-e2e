@@ -1,3 +1,6 @@
+Project made for assessment for BusinessLabs.org
+My id is 2026-2400
+
 # dotclaudemd
 
 CLAUDE.md Template Registry CLI — scaffold, lint, and health-check your CLAUDE.md files.
