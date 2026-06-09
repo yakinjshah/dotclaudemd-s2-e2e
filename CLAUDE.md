@@ -18,3 +18,15 @@ npm run lint
 ## Path-specific rules
 
 File-aware rules live in `.claude/rules/` and load automatically when editing matching paths.
+
+## Subfolder instructions
+
+- `src/CLAUDE.md` — conventions when editing CLI source under `src/`
+
+## Custom workflows
+
+- Slash command: `.claude/commands/review-claude-md.md` → `/review-claude-md`
+- Skill: `.claude/skills/scaffold-template/` (`context: fork`, restricted tools)
+- MCP: `.mcp.json` (`fs` + `fetch` servers)
+- Plan vs direct: `docs/plan-mode-workflow.md`
+- Sessions: `docs/session-management.md`

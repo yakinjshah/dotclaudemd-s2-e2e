@@ -605,6 +605,22 @@ Variables use `{{double_braces}}` for substitution. The `detects` field enables 
 
 ---
 
+## Claude Code workspace (CCA-F Scenario 2)
+
+This repo doubles as a **Claude Code workspace** demo for layered configuration:
+
+| Step | Evidence in repo |
+|------|------------------|
+| CLAUDE.md hierarchy | Root `CLAUDE.md` + `src/CLAUDE.md` with `@import` of `claude/*.md` |
+| Path-specific rules | `.claude/rules/test-files.md`, `.claude/rules/typescript-sources.md` |
+| Custom slash command | `.claude/commands/review-claude-md.md` |
+| Custom skill | `.claude/skills/scaffold-template/SKILL.md` (`context: fork`) |
+| MCP servers | `.mcp.json` — `fs` (project files) + `fetch` (HTTP); personal servers in `~/.claude.json` |
+| Plan vs direct | `docs/plan-mode-workflow.md` |
+| Session resume/fork | `docs/session-management.md` |
+
+Run `/review-claude-md` inside Claude Code to exercise the slash command.
+
 ## License
 
 MIT
